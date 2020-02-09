@@ -343,7 +343,7 @@ EOF
 }
 
 resource "aws_s3_bucket" "etcd_backups" {
-  bucket = "${local.name}-rancher-etcd-backup"
+  bucket = "3diq-${local.name}-rancher-etcd-backup"
   acl    = "private"
 
   versioning {
